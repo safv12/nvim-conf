@@ -26,7 +26,7 @@ Plug 'bakpakin/fennel.vim', { 'for': 'fennel' }
 Plug 'Olical/AnsiEsc'
 
 " clojure
-Plug 'Olical/conjure', {'tag': 'v4.10.0', 'for': ['clojure' , 'fennel']}
+Plug 'Olical/conjure', {'tag': 'v4.22.1', 'for': ['clojure' , 'fennel']}
 Plug 'clojure-vim/vim-jack-in', { 'for': 'clojure' }
 Plug 'tpope/vim-dispatch'
 Plug 'radenling/vim-dispatch-neovim'
