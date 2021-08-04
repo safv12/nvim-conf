@@ -67,11 +67,6 @@ call plug#end()
 let mapleader=" "
 let maplocalleader=","
 
-
-" j/k will move virtual lines (lines that wrap)
-noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
-noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
-
 " load config files *.vim
 runtime! config/*.vim
 
@@ -82,12 +77,11 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-set hidden              " hide files instead of close them
-
 set colorcolumn=0       " 80 chars ruler
 set cursorline          " highlight current line
 set nocursorcolumn      " no highlight current column
 set scrolloff=3         " start scrolling 3 lines before
+set nohlsearch          " no highlight search coincidences
 
 set nu                  " line numbers
 set relativenumber      " set relative numbers
