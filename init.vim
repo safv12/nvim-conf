@@ -1,4 +1,4 @@
-" plugin system block
+""" start of plugin system block
 call plug#begin('~/.local/share/nvim/plugged')
 
 " theme
@@ -20,9 +20,6 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 " git
 Plug 'tpope/vim-fugitive'
 
-" tests
-Plug 'vim-test/vim-test', { 'for': ['dart', 'elixir'] }
-
 " fennel
 Plug 'Olical/aniseed', { 'tag': 'v3.6.2', 'for': 'fennel' }
 Plug 'bakpakin/fennel.vim', { 'for': 'fennel' }
@@ -38,31 +35,21 @@ Plug 'radenling/vim-dispatch-neovim'
 Plug 'luochen1990/rainbow', { 'for': ['clojure' , 'fennel'] }
 Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': ['clojure' , 'fennel'] }
 Plug 'guns/vim-sexp', { 'for': ['clojure' , 'fennel'] }
-Plug 'eraserhd/parinfer-rust', {'do':
-        \  'cargo build --release', 'for': ['clojure' , 'fennel'] }
 Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
-
-" rust
-Plug 'rust-lang/rust.vim'
 
 " flutter
 Plug 'dart-lang/dart-vim-plugin'
-
-" elixir
-Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
-Plug 'elixir-editors/vim-elixir'
 
 " utils
 Plug 'editorconfig/editorconfig-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'stephpy/vim-yaml'
-
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
-" initialize plugin system
 
 call plug#end()
+""" end of plugin system
 
 let mapleader=" "
 let maplocalleader=","
