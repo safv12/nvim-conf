@@ -7,15 +7,6 @@ Plug 'morhetz/gruvbox'
 " status/tabline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'ryanoasis/vim-devicons'
-Plug 'edkolev/tmuxline.vim'
-
-" windows
-Plug 'wesQ3/vim-windowswap'
-Plug 'mhinz/vim-sayonara' " delete buffer and preserves current window
-
-" markdown
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 " navigation
 Plug 'preservim/nerdtree' " A tree explorer plugin for vim.
@@ -65,16 +56,12 @@ Plug 'elixir-editors/vim-elixir'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'mg979/vim-visual-multi', {'branch': 'master'} " multi cursor
 Plug 'stephpy/vim-yaml'
 
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
-
-" tmux
-Plug 'christoomey/vim-tmux-navigator'
-
 " initialize plugin system
+
 call plug#end()
 
 let mapleader=" "
@@ -103,6 +90,7 @@ set nocursorcolumn      " no highlight current column
 set scrolloff=3         " start scrolling 3 lines before
 
 set nu                  " line numbers
+set relativenumber      " set relative numbers
 set signcolumn=yes      " always show signcolumns
 
 " spell checking

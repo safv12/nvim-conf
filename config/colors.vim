@@ -4,5 +4,6 @@ if (has("termguicolors"))
 endif
 
 set background=dark
+
 " Theme
 colorscheme gruvbox
