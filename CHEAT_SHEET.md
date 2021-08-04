@@ -11,6 +11,19 @@
 | `ysiwFprint<cr>`        | insert `print` as function around word             | print( word )           |
 | `:help surround`        | opens the help                                     |                         |
 
+# coc
+
+| Command                 | Description                                        | Note                    |
+| ----------------------- | ---------------------------------------            | ----------------------- |
+| `gd`                    | go to definition                                   |                         |
+| `gr`                    | show references                                    |                         |
+| `K`                     | show documentations                                |                         |
+| `leader rn`             | rename                                             |                         |
+| `leader rr`             | refactor                                           |                         |
+| `leader rr`             | refactor                                           |                         |
+| `leader fb`             | format code                                        |                         |
+| `leader fs`             | format code selected                               |                         |
+
 # comment
 
 | Command                 | Description                             | Note                    |
