@@ -74,6 +74,10 @@ set nu                  " line numbers
 set relativenumber      " set relative numbers
 set signcolumn=yes      " always show signcolumns
 
+" hidden chars
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+set list
+
 " spell checking
 autocmd FileType markdown setlocal spell spelllang=en_us
 autocmd FileType gitcommit setlocal spell spelllang=en_us
