@@ -10,6 +10,9 @@ set noshowmode
 " tab with just the file name
 let g:airline#extensions#tabline#formatter = 'short_path'
 
+" showing the buffer index
+let g:airline#extensions#tabline#buffer_nr_show = 1
+
 " last section with just swap, line and column
 function! AirlineInit()
   let spc = g:airline_symbols.space
