@@ -30,6 +30,7 @@ Plug 'Olical/conjure', {'tag': 'v4.22.1', 'for': ['clojure' , 'fennel']}
 Plug 'clojure-vim/vim-jack-in', { 'for': 'clojure' }
 Plug 'tpope/vim-dispatch'
 Plug 'radenling/vim-dispatch-neovim'
+Plug 'gberenfield/cljfold.vim'
 
 " parens everywhere
 Plug 'luochen1990/rainbow', { 'for': ['clojure' , 'fennel'] }
