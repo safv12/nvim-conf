@@ -26,7 +26,7 @@ Plug 'bakpakin/fennel.vim', { 'for': 'fennel' }
 Plug 'Olical/AnsiEsc'
 
 " clojure
-Plug 'Olical/conjure', {'tag': 'v4.22.1', 'for': ['clojure' , 'fennel']}
+Plug 'Olical/conjure', {'tag': 'v4.23.0', 'for': ['clojure' , 'fennel']}
 Plug 'clojure-vim/vim-jack-in', { 'for': 'clojure' }
 Plug 'tpope/vim-dispatch'
 Plug 'radenling/vim-dispatch-neovim'
@@ -48,6 +48,8 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'stephpy/vim-yaml'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+Plug 'mhinz/vim-sayonara'
+Plug 'norcalli/nvim-colorizer.lua'
 
 call plug#end()
 """ end of plugin system
@@ -59,6 +61,7 @@ let maplocalleader=","
 runtime! config/*.vim
 
 " https://neovim.io/doc/user/options.html
+
 
 " no backup
 set nobackup
@@ -82,6 +85,9 @@ set list
 " spell checking
 autocmd FileType markdown setlocal spell spelllang=en_us
 autocmd FileType gitcommit setlocal spell spelllang=en_us
+
+" Clojure log color workaround
+lua require'colorizer'.setup()
 
 set cmdheight=2         " better for messages
 set updatetime=300      " smaller updatetime for CursorHold

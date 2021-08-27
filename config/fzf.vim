@@ -4,5 +4,6 @@ let $FZF_DEFAULT_OPTS='--reverse'
 " Close fzf windows when ESC
 autocmd! FileType fzf tnoremap <buffer> <esc> <c-c>
 
-nnoremap <silent> <C-p> :Files<CR>
+nnoremap <silent> <C-b> :Buffers<CR>
 nnoremap <silent> <C-g> :Ag<CR>
+nnoremap <silent> <C-p> :Files<CR>

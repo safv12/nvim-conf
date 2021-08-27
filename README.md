@@ -1,6 +1,6 @@
 # Neovim configuration
 
-Inspired by 'roberto/vimfiles' repository.
+Inspired by ['roberto/vimfiles'](https://github.com/roberto/vimfiles) repository.
 
 # Installing
 
@@ -27,3 +27,13 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 `:checkhealth`
 `:PlugStatus`
+
+## Other configurations
+
+In order to support `reload-all` and `reload-chaged` mappings of conjure it's
+necessary to configure the next plugins in `.lein/profiles.clj`
+
+```
+{:plugins [[cider/cider-nrepl "0.25.3"]
+           [refactor-nrepl "2.5.0"]]}
+```
