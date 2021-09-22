@@ -18,6 +18,8 @@
 | `gd`                    | go to definition                                   |                         |
 | `gr`                    | show references                                    |                         |
 | `K`                     | show documentations                                |                         |
+| `leader ac`    | show code actions|                         |
+| `leader ff`    | auto fix current line |                         |
 | `leader rn`             | rename                                             |                         |
 | `leader rr`             | refactor                                           |                         |
 | `leader rr`             | refactor                                           |                         |

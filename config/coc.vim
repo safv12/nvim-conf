@@ -46,7 +46,7 @@ nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<C
 nmap <leader>ac  <Plug>(coc-codeaction)
 
 " Apply AutoFix to problem on the current line.
-nmap <leader>ef  <Plug>(coc-fix-current)
+nmap <leader>ff  <Plug>(coc-fix-current)
 " list errors
 nnoremap <silent> <leader>el  :<C-u>CocDiagnostics<CR>
 

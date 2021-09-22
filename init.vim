@@ -50,6 +50,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'mhinz/vim-sayonara'
 Plug 'norcalli/nvim-colorizer.lua'
+Plug 'junegunn/vim-easy-align'
 
 call plug#end()
 """ end of plugin system
@@ -62,13 +63,17 @@ runtime! config/*.vim
 
 " https://neovim.io/doc/user/options.html
 
+nnoremap <Leader>+ :vertical resize +7<CR>
+nnoremap <Leader>- :vertical resize -7<CR>
+nnoremap <localleader>+ :resize +7<CR>
+nnoremap <localLeader>- :resize -7<CR>
 
 " no backup
 set nobackup
 set nowritebackup
 set noswapfile
 
-set colorcolumn=0       " 80 chars ruler
+set colorcolumn=80,120  " chars ruler
 set cursorline          " highlight current line
 set nocursorcolumn      " no highlight current column
 set scrolloff=3         " start scrolling 3 lines before
