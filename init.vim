@@ -51,7 +51,6 @@ Plug 'tpope/vim-surround'
 Plug 'mhinz/vim-sayonara'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'junegunn/vim-easy-align'
-
 call plug#end()
 """ end of plugin system
 
@@ -72,6 +71,7 @@ nnoremap <localLeader>- :resize -7<CR>
 set nobackup
 set nowritebackup
 set noswapfile
+set nowrap
 
 set colorcolumn=80,120  " chars ruler
 set cursorline          " highlight current line
@@ -97,6 +97,10 @@ lua require'colorizer'.setup()
 set cmdheight=2         " better for messages
 set updatetime=300      " smaller updatetime for CursorHold
 set shortmess+=c        " don't give ins-completion-menu messages
+
+" Splits
+set splitright
+set splitbelow
 
 let g:conjure#log#strip_ansi_escape_sequences_line_limit=0
 " autocmd BufEnter conjure-log-* AnsiEsc
