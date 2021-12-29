@@ -1,13 +1,8 @@
 # Neovim configuration
 
-Inspired by ['roberto/vimfiles'](https://github.com/roberto/vimfiles) repository.
-
 # Installing
 
 `git clone git@github.com:safv12/nvim-conf.git ~/.config/nvim`
-
-I'm using Neovim, for more information:
-https://github.com/neovim/neovim/wiki/Installing-Neovim
 
 ## Plugins Manager: vim-plug
 

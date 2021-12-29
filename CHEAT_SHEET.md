@@ -48,3 +48,24 @@
 | `:saveas %:h/newfile`   | save as `newfile`                       | it works like a reload  |
 | `:e %:h/otherfile`        | open `otherfile` in the folder        | it works like a reload  |
 
+
+### Text Object Selections (visual, operator-pending)
+Text object selections refer to text around the cursor.
+
+- The `af` and `if` objects select COMPOUND FORMS.
+- The `aF` and `iF` objects select top-level COMPOUND FORMS.
+- The `as` and `is` objects select STRINGS.
+- The `ae` and `ie` objects select ELEMENTS.
+
+### Wrap Commands (normal, visual)
+Wrap commands wrap the current COMPOUND FORM, ELEMENT, or visual selection and place the cursor at the head or tail of the newly created COMPOUND FORM.
+
+If `g:sexp_insert_after_wrap` is set (true by default), insert mode is entered after wrapping.
+
+`<LocalLeader>i` and `<LocalLeader>I` wrap the current COMPOUND FORM with `(` and `)`.
+`<LocalLeader>[` and `<LocalLeader>]` wrap the current COMPOUND FORM with `[` and `]`.
+`<LocalLeader>{` and `<LocalLeader>}` wrap the current COMPOUND FORM with `{` and `}`.
+`<LocalLeader>W` and `<LocalLeader>w` wrap the current ELEMENT with `(` and
+`)`.
+`<LocalLeader>e[` and `<LocalLeader>e]` wrap the current ELEMENT with `[` and `]`.
+`<LocalLeader>e{` and `<LocalLeader>e}` wrap the current ELEMENT with `{` and `}`.
