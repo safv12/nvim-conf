@@ -13,41 +13,49 @@
 
 # coc
 
-| Command                 | Description                                        | Note                    |
-| ----------------------- | ---------------------------------------            | ----------------------- |
-| `gd`                    | go to definition                                   |                         |
-| `gr`                    | show references                                    |                         |
-| `K`                     | show documentations                                |                         |
-| `leader ac`    | show code actions|                         |
-| `leader ff`    | auto fix current line |                         |
-| `leader rn`             | rename                                             |                         |
-| `leader rr`             | refactor                                           |                         |
-| `leader rr`             | refactor                                           |                         |
-| `leader fb`             | format code                                        |                         |
-| `leader fs`             | format code selected                               |                         |
+| Command     | Description           | Note                    |
+| ------------| ----------------------| ----------------------- |
+| `K`         | show documentations   |                         |
+| `gd`        | go to definition      |                         |
+| `gr`        | show references       |                         |
+| `leader ac` | show code actions     |                         |
+| `leader co` | open code outline     |                         |
+| `leader el` | open code diagnostics |                         |
+| `leader fb` | format code           |                         |
+| `leader ff` | auto fix current line |                         |
+| `leader fs` | format code selected  |                         |
+| `leader rn` | rename                |                         |
+| `leader rr` | refactor              |                         |
+| `leader rr` | refactor              |                         |
 
 # comment
 
-| Command                 | Description                             | Note                    |
-| ----------------------- | --------------------------------------- | ----------------------- |
-| `gcc`                   | comment current line                    |                         |
-| `[Visual]gc`            | comment selection                       |                         |
+| Command      | Description          | Note                    |
+| -------------| ---------------------| ----------------------- |
+| `gcc`        | comment current line |                         |
+| `[Visual]gc` | comment selection    |                         |
 
 # sexp
 
-| Command                 | Description                             | Note                    |
-| ----------------------- | --------------------------------------- | ----------------------- |
-| `<f`                    | move a form to left                     |
-| `>e`                    | move an element to right                |
-| `<(`                    | move 'parenthesis' to left              |
+| Command | Description                | Note  |
+| --------|----------------------------|-------|
+| `<f`    | move a form to left        |       |
+| `>e`    | move an element to right   |       |
+| `<(`    | move 'parenthesis' to left |       |
 
 # Files
 
-| Command                 | Description                             | Note                    |
-| ----------------------- | --------------------------------------- | ----------------------- |
-| `:saveas %:h/newfile`   | save as `newfile`                       | it works like a reload  |
-| `:e %:h/otherfile`        | open `otherfile` in the folder        | it works like a reload  |
+| Command               | Description                    | Note                    |
+| ----------------------| -------------------------------| ----------------------- |
+| `:saveas %:h/newfile` | save as `newfile`              | it works like a reload  |
+| `:e %:h/otherfile`    | open `otherfile` in the folder | it works like a reload  |
 
+# NERDTree
+
+| Command         | Description                      | Note                                       |
+| ----------------|----------------------------------|--------------------------------------------|
+| `ctrl n`        | :NERDTreeToggle                  | Shows the file directory                   |
+| `localleader f` | Reveals current file on the tree | Useful to find file locations in the tree  |
 
 ### Text Object Selections (visual, operator-pending)
 Text object selections refer to text around the cursor.
@@ -65,7 +73,6 @@ If `g:sexp_insert_after_wrap` is set (true by default), insert mode is entered a
 `<LocalLeader>i` and `<LocalLeader>I` wrap the current COMPOUND FORM with `(` and `)`.
 `<LocalLeader>[` and `<LocalLeader>]` wrap the current COMPOUND FORM with `[` and `]`.
 `<LocalLeader>{` and `<LocalLeader>}` wrap the current COMPOUND FORM with `{` and `}`.
-`<LocalLeader>W` and `<LocalLeader>w` wrap the current ELEMENT with `(` and
-`)`.
+`<LocalLeader>W` and `<LocalLeader>w` wrap the current ELEMENT with `(` and `)`.
 `<LocalLeader>e[` and `<LocalLeader>e]` wrap the current ELEMENT with `[` and `]`.
 `<LocalLeader>e{` and `<LocalLeader>e}` wrap the current ELEMENT with `{` and `}`.

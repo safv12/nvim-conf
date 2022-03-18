@@ -17,6 +17,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 * `brew install --HEAD universal-ctags/universal-ctags/universal-ctags` \
    https://github.com/universal-ctags/homebrew-universal-ctags
+* [Clojure LSP](https://clojure-lsp.io/)
 
 ## Checking setup
 

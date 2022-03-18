@@ -3,8 +3,7 @@ let g:coc_global_extensions = [
   \'coc-snippets',
   \'coc-json',
   \'coc-conjure',
-  \'coc-actions',
-  \'coc-elixir']
+  \'coc-actions']
 
 let g:coc_snippet_next = '<tab>'
 
