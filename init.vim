@@ -21,12 +21,12 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'tpope/vim-fugitive'
 
 " fennel
-Plug 'Olical/aniseed', { 'tag': 'v3.26.0', 'for': 'fennel' }
+Plug 'Olical/aniseed', { 'for': 'fennel' }
 Plug 'bakpakin/fennel.vim', { 'for': 'fennel' }
 Plug 'Olical/AnsiEsc'
 
 " clojure
-Plug 'Olical/conjure', {'tag': 'v4.28.0', 'for': ['clojure' , 'fennel']}
+Plug 'Olical/conjure', {'for': ['clojure' , 'fennel']}
 Plug 'clojure-vim/vim-jack-in', { 'for': 'clojure' }
 Plug 'tpope/vim-dispatch'
 Plug 'radenling/vim-dispatch-neovim'
