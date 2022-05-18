@@ -10,9 +10,9 @@ Plug 'vim-airline/vim-airline-themes'
 
 " navigation
 Plug 'preservim/nerdtree' " A tree explorer plugin for vim.
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'stsewd/fzf-checkout.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " coc.nvim
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
