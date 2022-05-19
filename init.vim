@@ -22,6 +22,7 @@ Plug 'Olical/aniseed', { 'for': 'fennel' }
 Plug 'bakpakin/fennel.vim', { 'for': 'fennel' }
 Plug 'Olical/conjure', {'for': ['clojure' , 'fennel']}
 Plug 'gberenfield/cljfold.vim'
+Plug 'm00qek/baleia.nvim'
 
 " parens everywhere
 Plug 'luochen1990/rainbow', { 'for': ['clojure' , 'fennel'] }
@@ -89,4 +90,6 @@ set splitright
 set splitbelow
 
 let g:conjure#log#strip_ansi_escape_sequences_line_limit=0
+let s:baleia = luaeval("require('baleia').setup { line_starts_at = 3 }")
+autocmd BufWinEnter conjure-log-* call s:baleia.automatically(bufnr('%'))
 " autocmd BufEnter conjure-log-* AnsiEsc
