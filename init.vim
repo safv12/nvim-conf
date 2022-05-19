@@ -17,40 +17,29 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " coc.nvim
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
-" git
-Plug 'tpope/vim-fugitive'
-
-" fennel
+" clojure
 Plug 'Olical/aniseed', { 'for': 'fennel' }
 Plug 'bakpakin/fennel.vim', { 'for': 'fennel' }
-Plug 'Olical/AnsiEsc'
-
-" clojure
 Plug 'Olical/conjure', {'for': ['clojure' , 'fennel']}
-Plug 'clojure-vim/vim-jack-in', { 'for': 'clojure' }
-Plug 'tpope/vim-dispatch'
-Plug 'radenling/vim-dispatch-neovim'
 Plug 'gberenfield/cljfold.vim'
 
 " parens everywhere
 Plug 'luochen1990/rainbow', { 'for': ['clojure' , 'fennel'] }
 Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': ['clojure' , 'fennel'] }
 Plug 'guns/vim-sexp', { 'for': ['clojure' , 'fennel'] }
-Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
 
 " flutter
 Plug 'dart-lang/dart-vim-plugin'
 
 " utils
-Plug 'editorconfig/editorconfig-vim'
+Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'nathanaelkane/vim-indent-guides'
 Plug 'stephpy/vim-yaml'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'mhinz/vim-sayonara'
-Plug 'norcalli/nvim-colorizer.lua'
 Plug 'junegunn/vim-easy-align'
+
 call plug#end()
 """ end of plugin system
 
@@ -90,9 +79,6 @@ set list
 " spell checking
 autocmd FileType markdown setlocal spell spelllang=en_us
 autocmd FileType gitcommit setlocal spell spelllang=en_us
-
-" Clojure log color workaround
-lua require'colorizer'.setup()
 
 set cmdheight=2         " better for messages
 set updatetime=300      " smaller updatetime for CursorHold
