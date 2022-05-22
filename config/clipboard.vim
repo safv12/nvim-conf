@@ -1,1 +1,0 @@
-vnoremap <leader>y "+y

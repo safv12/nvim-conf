@@ -1,0 +1,20 @@
+-- let g:clojure_foldwords = "def,ns,defflow,deftest"
+vim.g.clojure_foldwords = "def,ns,defflow,deftest"
+
+-- Conjure
+vim.api.nvim_set_keymap("n", "<localleader>tt", ":ConjureCljRunCurrentTest<CR>", {})
+vim.api.nvim_set_keymap("n", "<localleader>tn", ":ConjureCljCurrentNsTests<CR>", {})
+vim.api.nvim_set_keymap("n", "<localleader>ta", ":ConjureCljRunAllTests<CR>", {})
+
+-- let g:conjure#client#clojure#nrepl#test#current_form_names = ['deftest', 'defflow', 'defflow-new-system!']
+vim.g['conjure#client#clojure#nrepl#test#current_form_names'] = {'deftest', 'defflow', 'defflow-new-system!'}
+
+-- Sexp
+vim.g.sexp_filetypes = 'lisp,scheme,clojure,fennel' -- it adds fennel
+
+-- EasyAlign
+local easyOpts = { noremap = true }
+
+-- vi{ga<SPACE><CR>
+vim.api.nvim_set_keymap("n", "ga", "<Plug>(EasyAlign)", {})
+vim.api.nvim_set_keymap("x", "ga", "<Plug>(EasyAlign)", {})
