@@ -32,10 +32,6 @@ vim.opt.updatetime = 300 -- smaller updatetime for CursorHold
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
--- let g:conjure#log#strip_ansi_escape_sequences_line_limit=0
--- let s:baleia = luaeval("require('baleia').vim.opt.up { line_starts_at = 3 }")
--- autocmd BufWinEnter conjure-log-* call s:baleia.automatically(bufnr('%'))
-
 -- clipboard
 vim.api.nvim_set_keymap("v", "<leader>f", '"+y', {noremap = true})
 
