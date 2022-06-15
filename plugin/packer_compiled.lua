@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/Users/francisco.sanchez/.local/share/nvim/site/pack/packer/start/baleia.nvim",
     url = "https://github.com/m00qek/baleia.nvim"
   },
-  ["cljfold.vim"] = {
-    loaded = true,
-    path = "/Users/francisco.sanchez/.local/share/nvim/site/pack/packer/start/cljfold.vim",
-    url = "https://github.com/gberenfield/cljfold.vim"
-  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/Users/francisco.sanchez/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",

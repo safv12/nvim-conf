@@ -19,7 +19,6 @@ return require('packer').startup(function()
   use 'Olical/aniseed'
   use 'bakpakin/fennel.vim'
   use 'Olical/conjure'
-  use 'gberenfield/cljfold.vim'
   use 'm00qek/baleia.nvim'
   use 'luochen1990/rainbow'
   use 'tpope/vim-sexp-mappings-for-regular-people'
