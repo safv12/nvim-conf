@@ -3,7 +3,7 @@ vim.api.nvim_set_keymap("n", "<localleader>tt", ":ConjureCljRunCurrentTest<CR>",
 vim.api.nvim_set_keymap("n", "<localleader>tn", ":ConjureCljCurrentNsTests<CR>", {})
 vim.api.nvim_set_keymap("n", "<localleader>ta", ":ConjureCljRunAllTests<CR>", {})
 
-vim.g['conjure#client#clojure#nrepl#test#current_form_names'] = {'deftest', 'defflow', 'defflow-new-system!', 'defflow-i18n'}
+vim.g['conjure#client#clojure#nrepl#test#current_form_names'] = {'deftest', 'defflow', 'defflow-new-system!', 'defflow-i18n', 'defspec'}
 
 -- Sexp
 vim.g.sexp_filetypes = 'lisp,scheme,clojure,fennel' -- it adds fennel

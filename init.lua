@@ -7,5 +7,6 @@ vim.opt.termguicolors = true
 require('config/textEditor')
 require('config/navigation')
 require('config/lsp')
+require('config/treesitter')
 
 require('config/clojure')

@@ -25,6 +25,7 @@ local on_attach = function(client, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>ac', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>fb', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'v', '<leader>fs', '<cmd>lua vim.lsp.buf.range_formatting()<CR>', opts)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -81,64 +82,3 @@ cmp.setup {
     { name = 'luasnip' },
   },
 }
-
--- "nmap <silent> gr <Plug>(coc-references)
-
--- "" Use K to show documentation in preview window.
--- "nnoremap <silent> K :call <SID>show_documentation()<CR>
-
--- "function! s:show_documentation()
--- "  if (index(['vim','help'], &filetype) >= 0)
--- "    execute 'h '.expand('<cword>')
--- "  else
--- "    call CocAction('doHover')
--- "  endif
--- "endfunction
-
--- "" Highlight the symbol and its references when holding the cursor.
--- "autocmd CursorHold * silent call CocActionAsync('highlight')
-
--- "" Symbol renaming.
--- "nmap <leader>rn <Plug>(coc-rename)
--- "nmap <leader>rr <Plug>(coc-refactor)
-
--- "" Applying codeAction to the selected region.
--- "" Example: `<leader>aap` for current paragraph, `<leader>aw` for a word
--- "" Remap for do codeAction of selected region
--- "function! s:cocActionsOpenFromSelected(type) abort
--- "  execute 'CocCommand actions.open ' . a:type
--- "endfunction
--- "xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
--- "nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
-
-
--- "" Remap keys for applying codeAction to the current buffer.
--- "nmap <leader>ac  <Plug>(coc-codeaction)
-
--- "" Apply AutoFix to problem on the current line.
--- "nmap <leader>ff  <Plug>(coc-fix-current)
--- "" list errors
--- "nnoremap <silent> <leader>el  :<C-u>CocDiagnostics<CR>
-
--- ""format buffer
--- "nmap <leader>fb  <Plug>(coc-format)
--- "xmap <leader>fb  <Plug>(coc-format)
-
--- ""format selected
--- "nmap <leader>fs  <Plug>(coc-format-selected)
--- "xmap <leader>fs  <Plug>(coc-format-selected)
-
--- "" Add `:OR` command for organize imports of the current buffer.
--- "command! -nargs=0 OR   :call CocAction('runCommand', 'editor.action.organizeImport')
-
--- "nnoremap <silent> <leader>co  :<C-u>CocList outline<CR>
-
--- "" to navigate with tab
--- "inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
--- "inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
--- "" to confirm with enter
--- "inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
-
--- "" format
--- "command! -nargs=0 Format :call CocAction('format')
