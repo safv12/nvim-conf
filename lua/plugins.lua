@@ -32,5 +32,5 @@ return require('packer').startup(function()
   use 'tpope/vim-surround'
   use 'mhinz/vim-sayonara'
   use 'junegunn/vim-easy-align'
+  use 'ruanyl/vim-gh-line'
 end)
-

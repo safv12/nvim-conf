@@ -169,6 +169,11 @@ _G.packer_plugins = {
     path = "/Users/francisco.sanchez/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
+  ["vim-gh-line"] = {
+    loaded = true,
+    path = "/Users/francisco.sanchez/.local/share/nvim/site/pack/packer/start/vim-gh-line",
+    url = "https://github.com/ruanyl/vim-gh-line"
+  },
   ["vim-gitgutter"] = {
     loaded = true,
     path = "/Users/francisco.sanchez/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
