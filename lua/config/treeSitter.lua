@@ -1,5 +1,5 @@
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "clojure" },
+  ensure_installed = { "clojure", "rust", "lua" },
   sync_install = false,
   highlight = {
     enable = true,

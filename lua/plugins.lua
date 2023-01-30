@@ -9,6 +9,8 @@ return require('packer').startup(function()
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
   -- LSP and autocompletion
+  use 'williamboman/mason.nvim'
+  use 'williamboman/mason-lspconfig.nvim'
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
   use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
@@ -23,6 +25,9 @@ return require('packer').startup(function()
   use 'luochen1990/rainbow'
   use 'tpope/vim-sexp-mappings-for-regular-people'
   use 'guns/vim-sexp'
+
+  -- Rust
+  use 'simrat39/rust-tools.nvim'
 
   use 'dart-lang/dart-vim-plugin'
   use 'tpope/vim-fugitive'
