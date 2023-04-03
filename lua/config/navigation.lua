@@ -1,9 +1,28 @@
+require("telescope").load_extension('harpoon')
+
 -- NERDTree
 vim.api.nvim_set_keymap("n", "<C-n>", ":NERDTreeToggle<CR>", {noremap = true})
 vim.api.nvim_set_keymap("n", "<localleader>f", ":NERDTreeFind<CR>", {noremap = true})
 
 -- Telescope
-local telescopeMapOpts = { noremap = true, silent = true }
-vim.api.nvim_set_keymap("n", "<C-p>", "<cmd>Telescope find_files<CR>", telescopeMapOpts)
-vim.api.nvim_set_keymap("n", "<C-g>", "<cmd>Telescope live_grep<CR>", telescopeMapOpts)
-vim.api.nvim_set_keymap("n", "<C-b>", "<cmd>Telescope buffers<CR>", telescopeMapOpts)
+local opts = { noremap = true, silent = true }
+vim.api.nvim_set_keymap("n", "<C-p>", "<cmd>Telescope find_files<CR>", opts)
+vim.api.nvim_set_keymap("n", "<C-g>", "<cmd>Telescope live_grep<CR>", opts)
+vim.api.nvim_set_keymap("n", "<C-b>", "<cmd>Telescope buffers<CR>", opts)
+
+-- Harpoon
+
+local harpoon_mark = require("harpoon.mark")
+local harpoon_ui = require("harpoon.ui")
+
+vim.api.nvim_set_keymap('n', '<leader>ff', '<cmd>Telescope harpoon marks<CR>', opts)
+
+vim.keymap.set("n", "<leader>hh", harpoon_ui.toggle_quick_menu)
+vim.keymap.set("n", "<leader>fa", harpoon_mark.add_file)
+vim.keymap.set("n", "<leader>fn", harpoon_ui.nav_next)
+vim.keymap.set("n", "<leader>fp", harpoon_ui.nav_prev)
+
+vim.keymap.set("n", "<C-h>", function() harpoon_ui.nav_file(1) end)
+vim.keymap.set("n", "<C-j>", function() harpoon_ui.nav_file(2) end)
+vim.keymap.set("n", "<C-k>", function() harpoon_ui.nav_file(3) end)
+vim.keymap.set("n", "<C-l>", function() harpoon_ui.nav_file(4) end)

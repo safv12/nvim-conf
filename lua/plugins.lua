@@ -6,6 +6,7 @@ return require('packer').startup(function()
   use 'preservim/nerdtree'
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
+  use 'ThePrimeagen/harpoon'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
   -- LSP and autocompletion
