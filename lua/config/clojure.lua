@@ -1,7 +1,7 @@
 -- Conjure
-vim.api.nvim_set_keymap("n", "<localleader>tt", ":ConjureCljRunCurrentTest<CR>", {})
-vim.api.nvim_set_keymap("n", "<localleader>tn", ":ConjureCljCurrentNsTests<CR>", {})
-vim.api.nvim_set_keymap("n", "<localleader>ta", ":ConjureCljRunAllTests<CR>", {})
+vim.keymap.set("n", "<localleader>tt", ":ConjureCljRunCurrentTest<CR>", {})
+vim.keymap.set("n", "<localleader>tn", ":ConjureCljCurrentNsTests<CR>", {})
+vim.keymap.set("n", "<localleader>ta", ":ConjureCljRunAllTests<CR>", {})
 
 vim.g['conjure#client#clojure#nrepl#test#current_form_names'] = {
   'deftest',
@@ -19,8 +19,8 @@ vim.g.sexp_filetypes = 'lisp,scheme,clojure,fennel' -- it adds fennel
 local easyOpts = { noremap = true }
 
 -- vi{ga<SPACE><CR>
-vim.api.nvim_set_keymap("n", "ga", "<Plug>(EasyAlign)", {})
-vim.api.nvim_set_keymap("x", "ga", "<Plug>(EasyAlign)", {})
+vim.keymap.set("n", "ga", "<Plug>(EasyAlign)", {})
+vim.keymap.set("x", "ga", "<Plug>(EasyAlign)", {})
 
 vim.g['conjure#log#strip_ansi_escape_sequences_line_limit'] = 0
 local result = vim.api.nvim_exec(

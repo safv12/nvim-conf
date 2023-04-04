@@ -11,8 +11,8 @@
 | \<leader>p | Previous file in harpoon        |
 | \<C-h>      | 1st file in harpoon             |
 | \<C-j>      | 2nd file in harpoon             |
-| \<C-m>      | 3rd file in harpoon             |
-| \<C-l>      | 4th file in harpoon             | 
+| \<C-k>      | 3rd file in harpoon             |
+| \<C-l>      | 4th file in harpoon             |
 
 
 # vim-surround
