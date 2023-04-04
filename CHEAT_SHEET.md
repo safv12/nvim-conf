@@ -1,3 +1,20 @@
+# Navigation
+
+## Harpoon
+
+| Command     | Description                     |
+| ----------- | ------------------------------- |
+| \<leader>ff | Show harpoon marks on Telescope |
+| \<leader>hh | Show harpoon UI                 |
+| \<leader>fa | Add file to harpoon             |
+| \<leader>fn | Next fine in harpoon            |
+| \<leader>fp | Previous file in harpoon        |
+| \<C-h>      | 1st file in harpoon             |
+| \<C-j>      | 2nd file in harpoon             |
+| \<C-k>      | 3rd file in harpoon             |
+| \<C-lZ      | 4th file in harpoon             | 
+
+
 # vim-surround
 
 | Command                 | Description                                        | Note                    |
