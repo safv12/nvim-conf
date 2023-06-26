@@ -1,45 +1,42 @@
-return require('packer').startup(function()
-  use 'wbthomason/packer.nvim'
-
-  use 'morhetz/gruvbox'
-
-  use 'preservim/nerdtree'
-  use 'nvim-lua/plenary.nvim'
-  use 'nvim-telescope/telescope.nvim'
-  use 'ThePrimeagen/harpoon'
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+return {
+  'morhetz/gruvbox',
+  'preservim/nerdtree',
+  'nvim-lua/plenary.nvim',
+  'nvim-telescope/telescope.nvim',
+  'ThePrimeagen/harpoon',
+  'nvim-treesitter/nvim-treesitter',
 
   -- LSP and autocompletion
-  use 'williamboman/mason.nvim'
-  use 'williamboman/mason-lspconfig.nvim'
-  use 'neovim/nvim-lspconfig'
-  use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
-  use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
-  use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
-  use 'L3MON4D3/LuaSnip' -- Snippets plugin
-
-  -- Clojure plugins
-  use 'Olical/aniseed'
-  use 'bakpakin/fennel.vim'
-  use 'Olical/conjure'
-  use 'm00qek/baleia.nvim'
-  use 'luochen1990/rainbow'
-  use 'tpope/vim-sexp-mappings-for-regular-people'
-  use 'guns/vim-sexp'
+  'williamboman/mason.nvim',
+  'williamboman/mason-lspconfig.nvim',
+  'neovim/nvim-lspconfig',
+  'hrsh7th/nvim-cmp', -- Autocompletion plugin
+  'hrsh7th/cmp-nvim-lsp', -- LSP source for nvim-cmp
+  'saadparwaiz1/cmp_luasnip', -- Snippets source for nvim-cmp
+  'L3MON4D3/LuaSnip', -- Snippets plugin
 
   -- Rust
-  use 'simrat39/rust-tools.nvim'
+  'simrat39/rust-tools.nvim',
 
-  use 'dart-lang/dart-vim-plugin'
-  use 'tpope/vim-fugitive'
-  use 'airblade/vim-gitgutter'
-  use 'stephpy/vim-yaml'
-  use 'tpope/vim-commentary'
-  use 'tpope/vim-surround'
-  use 'mhinz/vim-sayonara'
-  use 'junegunn/vim-easy-align'
-  use 'ruanyl/vim-gh-line'
+  -- Clojure
+  'Olical/aniseed',
+  'bakpakin/fennel.vim',
+  'Olical/conjure',
+  'm00qek/baleia.nvim',
+  'luochen1990/rainbow',
+  'tpope/vim-sexp-mappings-for-regular-people',
+  'guns/vim-sexp',
+
+  'dart-lang/dart-vim-plugin',
+  'tpope/vim-fugitive',
+  'airblade/vim-gitgutter',
+  'stephpy/vim-yaml',
+  'tpope/vim-commentary',
+  'tpope/vim-surround',
+  'mhinz/vim-sayonara',
+  'junegunn/vim-easy-align',
+  'ruanyl/vim-gh-line',
 
   -- Copilot
-  use 'github/copilot.vim'
-end)
+  'github/copilot.vim'
+}

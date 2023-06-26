@@ -1,7 +1,3 @@
--- leader
-vim.g.mapleader = " "
-vim.g.maplocalleader = ","
-
 -- backup
 vim.opt.backup = false
 vim.opt.writebackup = false
