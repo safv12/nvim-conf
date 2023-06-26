@@ -1,10 +1,9 @@
 return {
   'morhetz/gruvbox',
-  'preservim/nerdtree',
   'nvim-lua/plenary.nvim',
   'nvim-telescope/telescope.nvim',
   'ThePrimeagen/harpoon',
-  'nvim-treesitter/nvim-treesitter',
+  'preservim/nerdtree',
 
   -- LSP and autocompletion
   'williamboman/mason.nvim',
