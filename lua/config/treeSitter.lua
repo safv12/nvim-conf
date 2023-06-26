@@ -7,11 +7,12 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 
-vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldmethod = "manual"
+-- vim.opt.foldmethod = "expr"
+-- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 
 -- Workaround because files opened through telescope doesn't apply folds
-vim.api.nvim_create_autocmd({ "BufEnter" }, {
-    pattern = { "*" },
-    command = "normal zx",
-})
+-- vim.api.nvim_create_autocmd({ "BufEnter" }, {
+--     pattern = { "*" },
+--     command = "normal zx",
+-- })

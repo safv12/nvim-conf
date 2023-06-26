@@ -39,4 +39,7 @@ return require('packer').startup(function()
   use 'mhinz/vim-sayonara'
   use 'junegunn/vim-easy-align'
   use 'ruanyl/vim-gh-line'
+
+  -- Copilot
+  use 'github/copilot.vim'
 end)

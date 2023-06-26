@@ -2,6 +2,7 @@
 vim.keymap.set("n", "<localleader>tt", ":ConjureCljRunCurrentTest<CR>", {})
 vim.keymap.set("n", "<localleader>tn", ":ConjureCljCurrentNsTests<CR>", {})
 vim.keymap.set("n", "<localleader>ta", ":ConjureCljRunAllTests<CR>", {})
+vim.keymap.set("n", "<leader>f", ":fold<CR>", {})
 
 vim.g['conjure#client#clojure#nrepl#test#current_form_names'] = {
   'deftest',
