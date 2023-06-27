@@ -22,10 +22,14 @@ vim.opt.termguicolors = true
 
 require("mason").setup()
 require("mason-lspconfig").setup()
-
-require("lspconfig").rust_analyzer.setup {}
-require("lspconfig").clojure_lsp.setup {}
-require("lspconfig").lua_ls.setup {}
+require("mason-lspconfig").setup_handlers {
+    function (server_name)
+        require("lspconfig")[server_name].setup {}
+    end,
+    ["rust_analyzer"] = function ()
+        require("rust-tools").setup {}
+    end
+}
 
 require('config/textEditor')
 require('config/navigation')
