@@ -3,7 +3,6 @@ return {
   'nvim-lua/plenary.nvim',
   'nvim-telescope/telescope.nvim',
   'ThePrimeagen/harpoon',
-  'preservim/nerdtree',
 
   -- LSP and autocompletion
   'williamboman/mason.nvim',

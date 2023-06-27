@@ -1,9 +1,5 @@
 require("telescope").load_extension('harpoon')
 
--- NERDTree
-vim.keymap.set("n", "<C-n>", ":NERDTreeToggle<CR>", {noremap = true})
-vim.keymap.set("n", "<localleader>f", ":NERDTreeFind<CR>", {noremap = true})
-
 -- Telescope
 local opts = { noremap = true, silent = true }
 vim.keymap.set("n", "<C-p>", "<cmd>Telescope find_files<CR>", opts)
