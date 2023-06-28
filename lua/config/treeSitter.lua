@@ -1,5 +1,5 @@
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "clojure", "rust", "lua" },
+  ensure_installed = { "clojure", "lua", "graphql" },
   sync_install = false,
   highlight = {
     enable = true,
@@ -8,11 +8,3 @@ require'nvim-treesitter.configs'.setup {
 }
 
 vim.opt.foldmethod = "manual"
--- vim.opt.foldmethod = "expr"
--- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-
--- Workaround because files opened through telescope doesn't apply folds
--- vim.api.nvim_create_autocmd({ "BufEnter" }, {
---     pattern = { "*" },
---     command = "normal zx",
--- })

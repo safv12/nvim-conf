@@ -1,11 +1,5 @@
 return {
   'morhetz/gruvbox',
-  'nvim-lua/plenary.nvim',
-  'nvim-telescope/telescope.nvim',
-  'ThePrimeagen/harpoon',
-
-  -- Rust
-  'simrat39/rust-tools.nvim',
 
   -- Clojure
   'Olical/aniseed',
@@ -27,5 +21,5 @@ return {
   'ruanyl/vim-gh-line',
 
   -- Copilot
-  'github/copilot.vim'
+  -- 'github/copilot.vim'
 }
