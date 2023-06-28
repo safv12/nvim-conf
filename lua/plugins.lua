@@ -1,5 +1,6 @@
 return {
-  'morhetz/gruvbox',
+  -- 'morhetz/gruvbox',
+  { "ellisonleao/gruvbox.nvim", priority = 1000 },
 
   -- Clojure
   'Olical/aniseed',
