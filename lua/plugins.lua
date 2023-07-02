@@ -11,7 +11,6 @@ return {
   'stephpy/vim-yaml',
   'tpope/vim-commentary',
   'tpope/vim-surround',
-  'mhinz/vim-sayonara',
   'junegunn/vim-easy-align',
   'ruanyl/vim-gh-line',
 }

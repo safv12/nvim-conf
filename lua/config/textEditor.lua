@@ -31,5 +31,4 @@ vim.opt.splitbelow = true
 vim.g.rainbow_active = 1
 
 -- Text editor mappings
-vim.keymap.set("n", "<leader>q", ":Sayonara!<CR>", {noremap = true})
 vim.keymap.set("v", "<leader>y", '"+y', {noremap = true}) -- Copy to clipboard
