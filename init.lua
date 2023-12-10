@@ -31,6 +31,10 @@ require("mason-lspconfig").setup_handlers {
     end,
 }
 
+-- fold
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+
 require('config/textEditor')
 require('config/lsp')
 require('config/clojure')
