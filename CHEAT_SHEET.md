@@ -4,7 +4,6 @@
 
 | Command     | Description                     |
 | ----------- | ------------------------------- |
-| \<leader>ff | Show harpoon marks on Telescope |
 | \<leader>hh | Show harpoon UI                 |
 | \<leader>a | Add file to harpoon             |
 | \<leader>n | Next fine in harpoon            |
@@ -28,7 +27,7 @@
 | `ysiwFprint<cr>`        | insert `print` as function around word             | print( word )           |
 | `:help surround`        | opens the help                                     |                         |
 
-# coc
+# lsp
 
 | Command     | Description           | Note                    |
 | ------------| ----------------------| ----------------------- |
@@ -60,18 +59,11 @@
 | `>e`    | move an element to right   |       |
 | `<(`    | move 'parenthesis' to left |       |
 
-# Files
-
-| Command               | Description                    | Note                    |
-| ----------------------| -------------------------------| ----------------------- |
-| `:saveas %:h/newfile` | save as `newfile`              | it works like a reload  |
-| `:e %:h/otherfile`    | open `otherfile` in the folder | it works like a reload  |
-
-# NERDTree
+# Neotree
 
 | Command         | Description                      | Note                                       |
 | ----------------|----------------------------------|--------------------------------------------|
-| `ctrl n`        | :NERDTreeToggle                  | Shows the file directory                   |
+| `ctrl n`        | Toggle neotree                   | Shows the file directory                   |
 | `localleader f` | Reveals current file on the tree | Useful to find file locations in the tree  |
 
 ### Text Object Selections (visual, operator-pending)
