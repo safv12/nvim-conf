@@ -6,6 +6,18 @@ vim.keymap.set('n', '<leader>ep', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opt
 vim.keymap.set('n', '<leader>en', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
 vim.keymap.set('n', '<leader>el', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
 
+local function custom_root_dir(pattern)
+  local util = require("lspconfig.util")
+  local fallback = vim.loop.cwd()
+  local patterns = {"project.clj", "deps.edn", "build.boot", "shadow-cljs.edn", ".git", "bb.edn"}
+  local root = util.root_pattern(patterns)(pattern)
+  return (root or fallback)
+end
+
+require'lspconfig'.clojure_lsp.setup{
+  root_dir = custom_root_dir
+}
+
 local on_attach = function(client, bufnr)
   -- Enable completion triggered by <c-x><c-o>
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')

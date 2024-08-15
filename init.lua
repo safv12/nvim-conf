@@ -17,11 +17,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins", {})
 
--- Color configuration
-vim.opt.background = "dark"
-vim.cmd([[colorscheme gruvbox]])
-vim.opt.termguicolors = true
-
 -- Mason setup
 require("mason").setup()
 require("mason-lspconfig").setup()
@@ -42,3 +37,9 @@ require('config/clojure')
 -- Workaround to avoid LSP repalcing Treesitter color highlight
 -- See: https://github.com/NvChad/NvChad/issues/1907#issuecomment-1501275281
 vim.highlight.priorities.semantic_tokens = 95
+
+require'lualine'.setup {
+  options = {
+    theme = 'gruvbox-material'
+  }
+}

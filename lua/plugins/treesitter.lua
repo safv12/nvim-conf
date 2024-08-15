@@ -26,6 +26,7 @@ return {
     ensure_installed = {
       "bash",
       "json",
+      "javascript",
       "lua",
       "luadoc",
       "luap",
