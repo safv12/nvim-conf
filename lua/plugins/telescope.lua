@@ -1,5 +1,4 @@
 -- Requirements
--- Install 'BurntSushi/ripgrep' for live_grep
 
 return {
   {
