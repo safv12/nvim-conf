@@ -3,9 +3,18 @@ return {
   lazy = false,
   priority = 1000,
   config = function()
-    -- Optionally configure and load the colorscheme
-    -- directly inside the plugin declaration.
+    vim.g.gruvbox_material_background = 'hard'
+    vim.g.gruvbox_material_foreground = 'mix'
     vim.g.gruvbox_material_enable_italic = true
+    vim.g.gruvbox_material_enable_bold = true
+    vim.g.gruvbox_material_ui_contrast = 'high'
+    vim.g.gruvbox_material_float_style = 'dim'
+    vim.g.gruvbox_material_diagnostic_virtual_text = 'colored'
+    vim.g.gruvbox_material_current_word = 'high contrast background'
+    vim.g.gruvbox_material_inlay_hints_background = 'dimmed'
+    vim.g.gruvbox_material_dim_inactive_windows = true
+    vim.g.gruvbox_material_menu_selection_background = 'green'
+    vim.g.gruvbox_material_better_performance = true
     vim.cmd.colorscheme('gruvbox-material')
   end
 }
